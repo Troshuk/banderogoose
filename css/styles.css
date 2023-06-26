@@ -1,15 +1,19 @@
 html,
 body {
+    /* Fill the page 100% */
     margin: 0;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Generic wraper */
+/* Gradient section wraper */
 .wrapper {
     width: 1170px;
+    /* Move eveerything to center */
     margin: auto;
+    /* Display all items in a row */
     display: flex;
+    /* Set space in between the sections */
     justify-content: space-between;
 }
 
@@ -71,6 +75,7 @@ body {
     padding: 12px 24px;
     font-size: 16px;
     line-height: 24px;
+    cursor: pointer;
 }
 
 /* Second section */
@@ -127,4 +132,105 @@ body {
     color: var(--black, #1B1D1F);
     font-size: 16px;
     line-height: 24px;
+}
+
+/* Form Section */
+
+.form-section {
+    background: linear-gradient(271deg, #A5DEFF 1.14%, #FCFEFE 100%);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.form-container {
+    border-radius: 40px;
+    background: var(--white, #FFF);
+    padding-top: 32px;
+    padding-left: 60px;
+    padding-bottom: 60px;
+    padding-right: 60px;
+    width: 573px;
+    /* align object to center of the page */
+    margin: auto;
+    text-align: center;
+    /* Make the box size to be sized by the content */
+    box-sizing: border-box;
+}
+
+.form-title {
+    color: #1B1D1F;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+.form-description {
+    color: #1B1D1F;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.form-field {
+    /* display items in the row */
+    display: flex;
+    /* display direction is column, one on top of the other one */
+    flex-direction: column;
+    /* align items to the left side */
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.form-field-email {
+    margin-bottom: 48px;
+}
+
+.form-field-label {
+    color: #1B1D1F;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.form-field-input {
+    width: 453px;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid #005BBB;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #1B1D1F;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.form-button {
+    border-radius: 8px;
+    background: var(--orange, #FF6B0A);
+    color: var(--white, #FFF);
+    font-size: 16px;
+    line-height: 24px;
+    /* inner border */
+    border: none;
+    /* outer broder */
+    outline: none;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+/* Goose animation */
+
+.gus-anim {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-bottom: auto;
+    margin-top: auto;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
 }

@@ -14,6 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <!-- Preload before animation is loaded -->
+    <link rel="preload" href="./img/gus-anim.gif" as="image" />
   </head>
   <body>
     <section class="main-page">
@@ -29,7 +31,9 @@
               народу.
             </p>
 
-            <button class="main-page-button">Запустити гуся</button>
+            <button class="main-page-button" id="go-to-form-btn">
+              Запустити гуся
+            </button>
           </div>
         </div>
 
@@ -74,5 +78,37 @@
         </div>
       </div>
     </section>
+    <section class="form-section">
+      <!-- `netlify` attribute is for the email send -->
+      <form action="#" class="form-container" id="form" netlify>
+        <img src="./img/tryzub.svg" alt="tryzub" />
+        <h3 class="form-title">Поділися, будь ласка, поштою</h3>
+        <p class="form-description">та запиши гуся до бандерозагону</p>
+
+        <div class="form-field">
+          <label for="user-name" class="form-field-label">Ім'я</label>
+          <input
+            type="text"
+            class="form-field-input"
+            name="Ім'я"
+            id="user-name"
+          />
+        </div>
+
+        <div class="form-field form-field-email">
+          <label for="user-email" class="form-field-label">Email</label>
+          <input
+            type="email"
+            class="form-field-input"
+            name="Email"
+            id="user-email"
+          />
+        </div>
+
+        <button class="form-button" id="launch-btn">Запустити гуся</button>
+      </form>
+    </section>
+
+    <script src="./js/form.js"></script>
   </body>
 </html>
