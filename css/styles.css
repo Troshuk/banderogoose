@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
 }
 
-/* First section */
+/* ------------------- Main Section ------------------- */
 
 .main-page {
     background: linear-gradient(270deg, #A5DEFF 0%, #FCFEFE 100%);
@@ -78,7 +78,7 @@ body {
     cursor: pointer;
 }
 
-/* Second section */
+/* ------------------- Goose Facts Section ------------------- */
 
 /* Goose facts container */
 .goose-facts {
@@ -134,7 +134,7 @@ body {
     line-height: 24px;
 }
 
-/* Form Section */
+/* ------------------- Form Section ------------------- */
 
 .form-section {
     background: linear-gradient(271deg, #A5DEFF 1.14%, #FCFEFE 100%);
@@ -221,7 +221,7 @@ body {
     cursor: pointer;
 }
 
-/* Goose animation */
+/* ------------------- Goose Animation ------------------- */
 
 .gus-anim {
     position: fixed;
