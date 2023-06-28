@@ -78,6 +78,10 @@ body {
     cursor: pointer;
 }
 
+.goose-main-page {
+    width: 50%;
+}
+
 /* ------------------- Goose Facts Section ------------------- */
 
 /* Goose facts container */
@@ -233,4 +237,120 @@ body {
     width: 100%;
     z-index: 2;
     pointer-events: none;
+}
+
+/* ------------------- Adaptive version ------------------- */
+
+@media screen and (max-width: 1170px) {
+    .wrapper {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        padding-bottom: 0;
+    }
+
+    .main-page-title {
+        font-size: 44px;
+    }
+
+    .main-page-text-container {
+        padding: 20px;
+    }
+
+    .main-page-description {
+        margin-bottom: 0;
+    }
+
+    .gus-facts-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .goose-main-page {
+        /* Stick to the section border */
+        align-self: flex-end;
+    }
+
+    .main-page-text-container {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .goose-facts-description {
+        width: auto;
+    }
+
+    .main-page-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .goose-main-page {
+        align-self: center;
+    }
+
+    .main-page-left-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .main-page-text-container {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .form-container {
+        width: auto;
+        padding: 20px;
+    }
+
+    .form-field {
+        align-items: center;
+    }
+
+    .form-field-input {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .form-container {
+        padding: 10px;
+    }
+
+    .form-field-input {
+        width: 280px;
+        height: 40px;
+    }
+
+    .goose-facts-title {
+        font-size: 38px;
+        line-height: 42px;
+    }
+
+    .goose-facts-description {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .goose-fact-item {
+        width: 100%;
+    }
+
+    .goose-fact-item-img {
+        width: 100%;
+    }
+
+    .goose-main-page {
+        width: 100%;
+    }
 }
